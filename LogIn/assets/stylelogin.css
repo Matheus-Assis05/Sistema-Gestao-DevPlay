@@ -1,0 +1,52 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap'); 
+/*Paleta de cores: */
+:root{
+    --azulClaro: #20ABC7;
+    --azulMid: #1B8AB3;
+    --azulDark: #25708b;
+    --Cinza: #2d2d2d;
+    --branco: #dcded7;
+}
+/*Inicio, estilo*/
+body{
+    font-family: 'Rubik'!important;
+    background-color: var(--Cinza)!important;
+}
+
+/*Box de Login*/
+.container{
+    margin: 6rem;
+    padding: 125px;
+    width: 45%!important;
+
+    border: 1px groove var(--azulClaro)!important;
+    box-shadow: 0px 0px 25px 7px rgba(0,0,0,0.52);
+    color: var(--branco);
+}
+/*Formulário*/
+.container .formulario{
+    padding: 20px;
+}
+.container .formulario form input{
+    background-color: var(--Cinza);
+    color: var(--branco);
+    font-size: 20px;
+}
+.container .formulario form label{
+    font-size: 22px;
+    color: var(--azulClaro);
+}
+    /*Botão*/
+.container .formulario form button{
+    font-size: 22px;
+    background-color: var(--azulMid);
+    transition: 0.35s;
+}
+.container .formulario form button:hover{
+    background-color: var(--azulClaro);
+}
+
+.container .formulario form a{
+    color: var(--azulMid);
+}

@@ -13,7 +13,33 @@
 </head>
 <body>
 
-    
+    <div class="container">
+        <div class="titulo text-center">
+            <h1>SGF - LogIn</h1>
+        </div>
+
+        <div class="formulario">
+            <form action="">
+                <!--Inputs:-->
+                    <label for="email">Email: </label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
+                    <input type="email" class="form-control" placeholder="Digite seu Email" name="email" id="email">
+                  </div>
+                    <label for="senha">Senha: </label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
+                    <input type="password" class="form-control" placeholder="Digite sua Senha" name="senha" id="senha">
+                </div> <br>
+
+                <!--Botao e Link-->
+                <div class="d-grid gap-2 text-center">
+                  <button type="submit" name="btnLog" id="btnLog" class="btn btn-primary">LOGIN</button> <br>
+                  <a href="../Cadastro/index.html">Não Tenho Uma Conta</a>
+                </div>
+            </form>
+        </div>
+    </div>
     
     <!--BS5-->
     <script src="./assets/bootstrap5/js/bootstrap.bundle.min.js"></script>
