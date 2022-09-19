@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGF - Cadastrar</title>
+    <link rel="stylesheet" href="./assets/stylecadastro.css">
+    
+    
+    <!--BS5-->
+    <link rel="stylesheet" href="./assets/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"> <!--BS5 ICONS-->
+</head>
+<body>
+
+    <div class="container">
+        <div class="titulo">
+            <h1>Cadastre-se no SGF!</h1>
+        </div>
+
+        <div class="formulario">
+            <form action="" method="post">
+                <!--Inputs: -->
+                <label for="nome">Nome:</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                    <input type="text" class="form-control" placeholder="Digite o seu nome:" name="nome" id="nome">
+                  </div>
+                <label for="email">Email:</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
+                    <input type="email" class="form-control" placeholder="Digite o seu email:" name="email" id="email">
+                </div>
+                <label for="senha">Senha:</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
+                    <input type="password" class="form-control" placeholder="Digite sua senha" name="senha" id="senha">
+                </div>
+                <label for="senhaConf">Confirmar Senha:</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
+                    <input type="password" class="form-control" placeholder="Confirme sua senha:" name="confSenha" id="confSenha">
+                  </div>
+                
+                <!--Botão e Link de Login-->
+                <div class="d-grid gap-2">
+                  <button type="button" name="btnRegistrar" id="btnRegistrar" class="btn btn-primary">REGISTRAR</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="link-login">
+            <a href="#">Ja tenho uma Conta</a>
+        </div>
+    </div>
+
+    <!--BS5-->
+    <script type="text/javascript" src="./assets/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <!--JQUERY-->
+    <script type="text/javascript" src="./assets/jquery/jquery-3.6.1.min.js"></script>
+</body>
+</html>

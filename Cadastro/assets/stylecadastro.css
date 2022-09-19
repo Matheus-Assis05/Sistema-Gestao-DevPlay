@@ -1,0 +1,62 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/*Paleta de cores: */
+:root{
+    --azulClaro: #20ABC7;
+    --azulMid: #1B8AB3;
+    --azulDark: #25708b;
+    --Cinza: #2d2d2d;
+    --branco: #dcded7;
+}
+/*Inicio, estilo*/
+
+body{
+    background-color: var(--Cinza)!important;
+    color: var(--branco)!important;
+    margin-top: 8rem!important;
+    font-family: 'Rubik'!important;
+}
+
+/*Div do Form*/
+
+.container .titulo{
+    text-align: center; /*Alinha o título ao centro da Div*/
+    color: white;
+    text-decoration: underline;
+}
+.container .formulario{
+    width: 50%;
+    margin-left: 25%; /*Ajusta o tamanho e alinha de forma RESPONSIVA*/
+}
+    /*Inputs e Labels*/
+.container .formulario input{
+    font-size: 20px;
+    background-color: var(--Cinza);
+    color: var(--branco);
+}
+.container .formulario label{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--azulClaro);
+}
+
+    /*Botao Registro e Link*/
+.container .formulario button{
+    background-color: var(--azulClaro);
+    font-weight: bold;
+    transition: 0.4s;
+    font-size: 20px;
+    margin-top: 0.8%;
+}
+.container .formulario button:hover{
+    background-color: var(--azulDark);
+}
+.container .link-login{
+    text-align: center;
+    margin-top: 1.5%;
+    font-weight: 500;
+    font-size: 18px;
+}
+.container .link-login a{
+    color: var(--azulClaro);
+}
