@@ -20,27 +20,27 @@
         </div>
 
         <div class="formulario">
-            <form action="" method="post">
+            <form action="./script/cadastro.php" method="post">
                 <!--Inputs: -->
                 <label for="nome">Nome:</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
-                    <input type="text" class="form-control" placeholder="Digite o seu nome:" name="nome" id="nome">
+                    <input type="text" class="form-control" placeholder="Digite o seu nome:" name="nome" id="nome" maxlength="35" required>
                   </div>
                 <label for="email">Email:</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
-                    <input type="email" class="form-control" placeholder="Digite o seu email:" name="email" id="email">
+                    <input type="email" class="form-control" placeholder="Digite o seu email:" name="email" id="email" maxlength="50" required>
                 </div>
                 <label for="senha">Senha:</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
-                    <input type="password" class="form-control" placeholder="Digite sua senha" name="senha" id="senha">
+                    <input type="password" class="form-control" placeholder="Digite sua senha" name="senha" id="senha" maxlength="25" required>
                 </div>
                 <label for="senhaConf">Confirmar Senha:</label>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
-                    <input type="password" class="form-control" placeholder="Confirme sua senha:" name="confSenha" id="confSenha">
+                    <input type="password" class="form-control" placeholder="Confirme sua senha:" name="confSenha" id="confSenha" required>
                   </div>
                 
                 <!--Botão e Link de Login-->
