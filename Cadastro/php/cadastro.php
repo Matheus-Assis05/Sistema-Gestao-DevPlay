@@ -5,6 +5,9 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 $senhaConf = $_POST['confSenha'];
 
+//protegendo a senha
+md5($senha);
+
 //Cadastro no Banco
 if ($senha == $senhaConf) {
     $conn = new mysqli('localhost', 'root', '', 'bancoSgf'); //atribui uma conexao mysql (servidor, nome, senha, bd)
@@ -15,7 +18,7 @@ if ($senha == $senhaConf) {
         $stmt->bind_param("sss", $nome, $email, $senha);
         $stmt->execute();
 
-        echo "<h1>REGISTRADO</h1>";
+        header('Location: ../../LogIn/index.html');
     }
 } else {
     echo "<h1><a href='../index.html'>ERRO!, A SENHA DEVE SER IGUAL A CONFIRMAÇÃO, CLIQUE AQUI PARA VOLTAR</a></h1>";
