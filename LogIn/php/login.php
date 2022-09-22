@@ -42,7 +42,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) { //SE for enciado email e
         $_SESSION['email'] = $usuario['email'];
         $_SESSION['nome'] = $usuario['nome'];
 
-        header('Location: ./painel_temp.php'); //envia um HTTP que REDIRECIONA PARA OUTRA PÁGINA
+        header('Location: ../../Painel/php/index.php'); //envia um HTTP que REDIRECIONA PARA OUTRA PÁGINA
 
     } else {
         echo "Falha ao logar, email ou senha incorretos";
