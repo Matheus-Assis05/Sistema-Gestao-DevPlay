@@ -1,0 +1,14 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/*Paleta de cores: */
+:root{
+    --azulClaro: #20ABC7;
+    --azulMid: #1B8AB3;
+    --azulDark: #25708b;
+    --Cinza: #2d2d2d;
+    --branco: #dcded7;
+}
+body{
+    font-family: 'Rubik';
+}
+/*Inicio, estilo*/
