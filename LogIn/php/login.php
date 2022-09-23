@@ -45,7 +45,9 @@ if (isset($_POST['email']) || isset($_POST['senha'])) { //SE for enciado email e
         header('Location: ../../Painel/php/index.php'); //envia um HTTP que REDIRECIONA PARA OUTRA PÁGINA
 
     } else {
-        echo "Falha ao logar, email ou senha incorretos";
+        //Mensagem de erro: cria um alerta JS na página de login
+        echo "<script type='text/javascript'>alert('FALHA AO LOGAR! Email ou Senha INCORRETOS!');";
+        echo "javascript:window.location='../index.html';</script>";
     }
 }
 

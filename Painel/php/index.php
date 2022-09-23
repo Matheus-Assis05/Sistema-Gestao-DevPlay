@@ -12,7 +12,7 @@ include('./protection.php')
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Teste Temporario</title>
+    <title>SGF - Perfil</title>
     <link rel="stylesheet" href="../assets/stylepainel.css">
 
     <!--BS5-->
@@ -48,6 +48,6 @@ include('./protection.php')
         <h2>Bem Vindo, <?php echo $_SESSION['nome']; ?></h2>
     </div>
 
+<script src="../../assets-global/bootstrap5/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

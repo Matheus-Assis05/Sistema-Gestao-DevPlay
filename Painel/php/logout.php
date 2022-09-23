@@ -1,6 +1,10 @@
 <?php
-    
-    session_destroy();
+//Verifica se há uma sessão ativa e cria uma se nao a-tiver:
+if (!isset($_SESSION)) {
+    session_start();
+}
 
-    header('Location: ../../LogIn/index.html')
+session_destroy();
+
+header('Location: ../../LogIn/index.html');
 ?>

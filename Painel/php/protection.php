@@ -5,6 +5,6 @@
         session_start();
     }
     if(!isset($_SESSION['email'])){
-        die("Você precisa estar logado para acessar essa página.");
+        die(header('Location: ../erro.html'));
     }
 ?>
