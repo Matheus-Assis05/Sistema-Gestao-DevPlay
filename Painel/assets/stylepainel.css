@@ -12,5 +12,5 @@
 body{
     font-family: 'Rubik'!important;
     background-color: var(--Cinza)!important;
-    color: var(--branco);
+    color: var(--branco)!important;
 }
