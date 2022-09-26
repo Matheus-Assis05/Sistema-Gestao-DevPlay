@@ -35,8 +35,6 @@ include('./protection.php')
                         <li><a class="nav-link text-white h5" href="./index.php">Home</a></li>
                         <li><a class="nav-link text-white h5" href="./logout.php">LogOut</a></li>
                     </ul>
-            </div>
-        </div>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
