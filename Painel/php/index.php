@@ -49,11 +49,127 @@ include('./protection.php')
         
         <!--============= MENU ESQUERDA ==============-->
             <div class="menu-l"> 
-                <div class="perfil">
-                    <i class=""></i>
-                    <h2>Bem Vindo, <?php echo $_SESSION['nome']; ?></h2>
-                </div>
+                <ul>
+                    <li><div class="perfil">
+                        <i class="bi bi-person-circle"></i><?php echo $_SESSION['nome']?>
+                    </div></li>
+                    <br>
+                    <li><div class="lanca">
+                        <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <i class="bi bi-plus-circle"></i>Adicionar Lançamento
+                        </a>
+                    </div></li>
+
+                    <li><div class="graf">
+                        <a href="">
+                            <i class="bi bi-graph-up"></i>Gráfico Detalhado
+                        </a>
+                    </div></li>
+                </ul>
             </div>   
+
+        <!--===========TABELA DIREITA==============-->
+            <div class="tabela-r">
+                <table class="table table-light">
+                    <thead>
+                        <tr>
+                            <th scope="col">MÊS</th>
+                            <th scope="col">Renda</th>
+                            <th scope="col">Despesa</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!--======MODAL DE ADICIONAR LANÇAMENTO=======-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">PREENCHA</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!--====FORM DO MODAL===-->
+                        <form action="" method="post">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">MES: </span>
+                                <input type="text" class="form-control" placeholder="JANEIRO" aria-describedby="basic-addon1">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">RENDA:</span>
+                                <input type="number" class="form-control" placeholder="0.00" aria-describedby="basic-addon1" name="renda">
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">DESPESA:</span>
+                                <input type="number" class="form-control" placeholder="0.00" aria-describedby="basic-addon1" name="despesa">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">FECHAR</button>
+                        <button type="button" class="btn btn-primary">ENVIAR</button>
+                    </div>
+                    </div>
+                </div>
+                </div>
 
 <script src="../../assets-global/bootstrap5/js/bootstrap.bundle.min.js"></script>
 </body>

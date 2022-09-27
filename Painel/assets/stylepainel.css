@@ -14,3 +14,32 @@ body{
     background-color: var(--Cinza)!important;
     color: var(--branco)!important;
 }
+
+/*Menu da esquerda*/
+.menu-l{
+    font-size: 28px;
+    color: var(--azulClaro);
+}
+.menu-l i{
+    font-size: 70px;
+    padding: 10px;
+}
+.menu-l ul li{
+    list-style: none;
+    padding: 1rem;
+    padding-bottom: 5rem;
+}
+.menu-l ul li a{
+    text-decoration: none;
+    color: var(--azulClaro);
+}
+
+/*Tabela Direita*/
+.tabela-r{
+    width: 1000px;
+    position: absolute;
+    right: 180px;
+    top: 130px;
+
+    font-size: 25px;
+}
