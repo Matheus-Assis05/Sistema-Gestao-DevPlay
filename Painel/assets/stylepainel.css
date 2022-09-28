@@ -13,33 +13,33 @@ body{
     font-family: 'Rubik'!important;
     background-color: var(--Cinza)!important;
     color: var(--branco)!important;
+    margin-left: 0px;
 }
 
 /*Menu da esquerda*/
 .menu-l{
-    font-size: 28px;
-    color: var(--azulClaro);
+    font-size: 25px;
+    margin-left: 0px;
+    width: 25rem;
+    height: 100vh;
 }
-.menu-l i{
-    font-size: 70px;
-    padding: 10px;
+.menu-l .col .row{
+    padding: 15px;
+    padding-top: 20px;
 }
-.menu-l ul li{
-    list-style: none;
-    padding: 1rem;
-    padding-bottom: 5rem;
+.menu-l .col .row a{
+    font-size: 20px;
+    text-align: left;
+    padding-top: 1.5rem;
 }
-.menu-l ul li a{
-    text-decoration: none;
-    color: var(--azulClaro);
-}
-
 /*Tabela Direita*/
 .tabela-r{
-    width: 1000px;
+    width: 1100px;
     position: absolute;
-    right: 180px;
-    top: 130px;
+    right: 120px;
+    top: 115px;
 
-    font-size: 25px;
+    font-size: 30px;
+}
+.tabela-r .table{
 }

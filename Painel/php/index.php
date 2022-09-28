@@ -27,50 +27,35 @@ include('./protection.php')
 </head>
 
 <body>
-        <!--=========== NAVBAR ===========-->
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class=" bg-dark p-4">
-                <h5 class="text-white h4">SGF</h5>
-                    <ul>
-                        <li><a class="nav-link text-white h5" href="./index.php">Home</a></li>
-                        <li><a class="nav-link text-white h5" href="./logout.php">LogOut</a></li>
-                    </ul>
-            </div>
-        </div>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
-        
-        <!--menus laterais serão feitos usando float-->
-        
-        <!--============= MENU ESQUERDA ==============-->
-            <div class="menu-l"> 
-                <ul>
-                    <li><div class="perfil">
-                        <i class="bi bi-person-circle"></i><?php echo $_SESSION['nome']?>
-                    </div></li>
-                    <br>
-                    <li><div class="lanca">
-                        <a role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <i class="bi bi-plus-circle"></i>Adicionar Lançamento
+        <!--============= MENU LATERAL ESQUERDA ==============-->
+            <div class="container text-left bg-dark menu-l"> <!--Usnado o grid do bootstrap farei um dashboard formado por 1 coluna com diversas linhas-->
+                <div class="col bg-dark coluna1">
+                    <div class="row">
+                        <strong>SGF - Painel</strong>
+                    </div>
+                    <div class="row">
+                        <strong><i class="bi bi-person-circle"></i>
+                        <?php echo $_SESSION['nome'];?></strong>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                    <div class="row">
+                        <a role="button" class="btn btn-primary">
+                            <p><i class="bi bi-graph-up"></i>
+                            Gráfico Detalhado</p>
                         </a>
-                    </div></li>
-
-                    <li><div class="graf">
-                        <a href="">
-                            <i class="bi bi-graph-up"></i>Gráfico Detalhado
+                    </div>
+                    <div class="row">
+                        <a role="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <p><i class="bi bi-plus-circle"></i>
+                            Adicionar Lançamento</p>
                         </a>
-                    </div></li>
-                </ul>
-            </div>   
+                    </div>
+                </div>
+            </div> 
 
         <!--===========TABELA DIREITA==============-->
             <div class="tabela-r">
-                <table class="table table-light">
+                <table class="table table-dark">
                     <thead>
                         <tr>
                             <th scope="col">MÊS</th>
