@@ -22,7 +22,7 @@ body{
     margin-left: 0px;
     width: 25rem;
     height: 100vh;
-}
+}   
 .menu-l .col .row{
     padding: 15px;
     padding-top: 20px;
@@ -33,13 +33,4 @@ body{
     padding-top: 1.5rem;
 }
 /*Tabela Direita*/
-.tabela-r{
-    width: 1100px;
-    position: absolute;
-    right: 120px;
-    top: 115px;
 
-    font-size: 30px;
-}
-.tabela-r .table{
-}
