@@ -50,11 +50,53 @@ include('./protection.php')
                             Adicionar Lançamento</p>
                         </a>
                     </div>
+                    <div class="row">
+                        <a class="logout btn btn-secondary" href="./logout.php">LogOut</a>
+                    </div>
                 </div>
             </div> 
 
         <!--===========TABELA DIREITA==============-->
-            
+            <div class="container tabela">
+                <div class="table-responsive-lg">
+                    <table class="table table-light">
+                        <thead>
+                            <tr>
+                                <th scope="col">MÊS</th>
+                                <th scope="col">RENDA</th>
+                                <th scope="col">DESPESA</th>
+                                <th scope="col">TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="">
+                                <td scope="row">Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row">Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row">Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row">Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                                <td>Item</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
         <!--======MODAL DE ADICIONAR LANÇAMENTO=======-->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -92,5 +134,6 @@ include('./protection.php')
                 </div>
 
 <script src="../../assets-global/bootstrap5/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/lancamento.js" type="text/javascript"></script>
 </body>
 </html>
