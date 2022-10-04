@@ -68,30 +68,30 @@ include('./protection.php')
                                 <th scope="col">TOTAL</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr class="">
-                                <td scope="row">Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
+                        <tbody id="tabela">
+                            <tr class="mes">
+                                <td scope="row">0.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
                             </tr>
-                            <tr class="">
-                                <td scope="row">Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
+                            <tr class="renda">
+                                <td scope="row">0.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
                             </tr>
-                            <tr class="">
-                                <td scope="row">Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
+                            <tr class="despesa">
+                                <td scope="row">0.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
                             </tr>
-                            <tr class="">
-                                <td scope="row">Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
-                                <td>Item</td>
+                            <tr class="total">
+                                <td scope="row">0.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
+                                <td>0.00</td>
                             </tr>
                         </tbody>
                     </table>
@@ -110,24 +110,30 @@ include('./protection.php')
                         <!--====FORM DO MODAL===-->
                         <form action="" method="post">
                             <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">EMAIL: </span>
+                              <input type="email" class="form-control" id="Lmail" aria-describedby="emailHelpId" placeholder="example@mail.com">
+                              <small id="emailHelpId" class="form-text text-muted">Confirme o seu email de cadastro</small>
+                            </div>
+
+                            <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">MES: </span>
-                                <input type="text" class="form-control" placeholder="JANEIRO" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" placeholder="JANEIRO" aria-describedby="basic-addon1" id="mes">
                             </div>
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">RENDA:</span>
-                                <input type="number" class="form-control" placeholder="0.00" aria-describedby="basic-addon1" name="renda">
+                                <input type="number" class="form-control" placeholder="0.00" aria-describedby="basic-addon1" id="renda">
                             </div>
 
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">DESPESA:</span>
-                                <input type="number" class="form-control" placeholder="0.00" aria-describedby="basic-addon1" name="despesa">
+                                <input type="number" class="form-control" placeholder="0.00" aria-describedby="basic-addon1" id="despesa">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">FECHAR</button>
-                        <button type="button" class="btn btn-primary">ENVIAR</button>
+                        <button type="submit" class="btn btn-primary" onclick="enviarBD()">ENVIAR</button>
                     </div>
                     </div>
                 </div>
