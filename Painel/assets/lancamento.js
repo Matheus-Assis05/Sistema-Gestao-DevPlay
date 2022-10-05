@@ -4,15 +4,18 @@
  */
 
 //Conexao com o banco
-const {createPool} = require('mysql');
+var mysql = require('./node_modules/mysql/index');
 
-const pool = createPool({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "bancoSgf",
-})
+var con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "bancoSgf"
+});
 
+con.connect(function(err){
+    if(err) throw err;
+    console.log("conectado!")
 //Inputs e Tabela
 const tabela = document.querySelector('#tabela')
 const colMes = tabela.querySelector('.mes')
@@ -29,7 +32,12 @@ function enviarBD(){
 
     //Query mysql para enviar pro BD
 
-    pool.query(`insert into lancamento(email_user, mes, renda, despesa) values(${inMail}, ${inMes},${inRenda},${inDespesa})`, (err, res)=>{
-        return console.log(res)
+    con.query(`insert into lancamento(email_user, mes, renda, despesa) values(${inMail}, ${inMes},${inRenda},${inDespesa})`, (err, res)=>{
+        if(err) throw err;
+
+        return console.log("🐘Insert feito com sucesso!")
     })
+    return false
 }
+
+})
