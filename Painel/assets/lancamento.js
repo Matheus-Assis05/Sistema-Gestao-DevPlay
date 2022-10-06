@@ -3,6 +3,8 @@
  * tambem levarei tal valor para o banco de dados
  */
 
+//TODO - CONEXAO USANDO SEQUELIZE (npm install sequelize)
+
 //Conexao com o banco
 var mysql = require('./node_modules/mysql/index');
 
